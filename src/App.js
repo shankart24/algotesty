@@ -277,7 +277,6 @@ export default function App() {
             )
                 .then(() => {
                     alert("Added!");
-                    setState(defaultState);
                     setLegsModified(!legsModified);
                 })
                 .catch(err => console.log(err));
@@ -296,7 +295,6 @@ export default function App() {
             )
                 .then(() => {
                     alert("Added!");
-                    setState(defaultState);
                     setLegsModified(!legsModified);
                 })
                 .catch(err => console.log(err));
