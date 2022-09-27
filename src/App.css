@@ -1,0 +1,77 @@
+:root{
+  --primaryColor: #375A9E
+}
+
+.main{
+ padding: 20px;
+}
+
+.options-form, .futures-form{
+  display: flex;
+  gap: 10px
+}
+
+.buttons-div{
+  display: flex;
+  margin-top: 25px;
+  gap: 10px
+}
+
+.segments{
+  margin-bottom: 20px;
+}
+
+.segments label{
+  margin-right: 20px
+}
+
+select{
+background: var(--primaryColor);
+border: 1px solid white;
+color: white;
+border-radius: 18px;
+padding: 5px 32px 5px 13px;
+font-weight: 300;
+font-size: 13px;
+}
+
+input[type="number"]{
+  width: 70px;
+border: 1px solid gray;
+border-radius: 18px;
+font-weight: 300;
+font-size: 12px;
+padding: 6px 12px 6px 12px;
+}
+
+button{
+min-width: 129px;
+height: 32px;
+background-color: var(--primaryColor);
+color: white;
+border:none;
+border-radius: 18px;
+font-weight: 500;
+font-size: 13px;
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+cursor: pointer;
+padding: 0 1rem;
+}
+
+
+.leg-card{
+  width: 90%;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+   box-shadow: 2px 2px 12px rgba(0,0,0,0.1);
+   margin-top: 40px;
+    padding: 20px;
+    height: 250px;
+}
