@@ -60,7 +60,7 @@ export default function AddLeg() {
                 />
             )}
 
-            <div className="buttons-div">
+            <div className="buttons-div" style={{ marginTop: "35px" }}>
                 <button onClick={addLeg}>Add Leg</button>
                 <button onClick={cancelLeg}>Cancel</button>
             </div>
