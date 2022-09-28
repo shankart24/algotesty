@@ -1,12 +1,6 @@
-import { useContext } from "react";
-import { DataContext } from "../App";
+import { AdditionalOptions } from "./AdditionalOptions";
 
-export default function OptionsForm({
-    state,
-    setState,
-    handleSelectOptions,
-    renderAdditionalOptions
-}) {
+export default function OptionsForm({ state, setState, handleSelectOptions }) {
     return (
         <div className="options-form">
             <div>
@@ -81,7 +75,7 @@ export default function OptionsForm({
             })}
 
             <div style={{ marginLeft: "10px" }}>
-                {renderAdditionalOptions()}
+                <AdditionalOptions {...{ state, setState }} />
             </div>
         </div>
     );

@@ -1,12 +1,4 @@
-import { useContext } from "react";
-import { DataContext } from "../App";
-
-export default function FuturesForm({
-    state,
-    setState,
-    handleSelectOptions,
-    renderAdditionalOptions
-}) {
+export default function FuturesForm({ state, setState }) {
     return (
         <div className="futures-form">
             <div>
@@ -26,7 +18,6 @@ export default function FuturesForm({
                                 key={optionName}
                                 className="mr-4 bg-white font-medium  cursor-pointer "
                                 value={optionName}
-                                // selected={state.position === optionName}
                             >
                                 {optionName}
                             </option>

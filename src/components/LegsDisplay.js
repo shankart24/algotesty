@@ -3,14 +3,7 @@ import { DataContext } from "../App";
 import { LegCard } from "./LegCard";
 
 export default function LegsDisplay() {
-    const {
-        allLegs,
-        copyLeg,
-        deleteLeg,
-        renderAdditionalOptions,
-        handleSelectOptions,
-        setLegsModified
-    } = useContext(DataContext);
+    const { allLegs } = useContext(DataContext);
 
     return (
         <div>

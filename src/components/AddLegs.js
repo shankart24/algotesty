@@ -4,15 +4,21 @@ import FuturesForm from "./FuturesForm";
 import OptionsForm from "./OptionsForm";
 
 export default function AddLeg() {
-    const {
-        state,
-        setState,
-        addLeg,
-        cancelLeg,
-        renderAdditionalOptions,
-        handleSelectOptions,
-        handleRadioOptions
-    } = useContext(DataContext);
+    const { state, setState, addLeg, cancelLeg } = useContext(DataContext);
+
+    const handleSelectOptions = (e, fieldName) => {
+        setState(state => ({
+            ...state,
+            [fieldName]: e.target.value
+        }));
+    };
+
+    const handleRadioOptions = e => {
+        setState(state => ({
+            ...state,
+            segment: e.target.value
+        }));
+    };
 
     return (
         <>
@@ -45,8 +51,7 @@ export default function AddLeg() {
                     {...{
                         state,
                         setState,
-                        handleSelectOptions,
-                        renderAdditionalOptions
+                        handleSelectOptions
                     }}
                 />
             ) : (
@@ -54,8 +59,7 @@ export default function AddLeg() {
                     {...{
                         state,
                         setState,
-                        handleSelectOptions,
-                        renderAdditionalOptions
+                        handleSelectOptions
                     }}
                 />
             )}
